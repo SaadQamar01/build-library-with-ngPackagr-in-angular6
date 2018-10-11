@@ -1,0 +1,4 @@
+<div id="snackbar" class="show" *ngIf="toast.visible | async">
+  {{ toast.message | async }}
+  <a class="dismiss" (click)="toast.hide()">Dismiss</a>
+</div>
